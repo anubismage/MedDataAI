@@ -1,0 +1,44 @@
+==================================================
+PERFORMING ADVANCED CLUSTERING...
+Cluster Analysis:
+Cluster 0 (158 files):
+  Mean early exact: 5.23
+  Mean early semantic: 0.67
+  Mean late exact: 0.95
+  Mean late semantic: 0.34
+  Mean early total: 4.97
+  Mean late total: 0.96
+
+Cluster 1 (130 files):
+  Mean early exact: 1.28
+  Mean early semantic: 0.17
+  Mean late exact: 0.31
+  Mean late semantic: 0.02
+  Mean early total: 1.37
+  Mean late total: 0.32
+
+Cluster 2 (52 files):
+  Mean early exact: 0.37
+  Mean early semantic: 0.94
+  Mean late exact: 3.10
+  Mean late semantic: 0.35
+  Mean early total: 1.23
+  Mean late total: 3.38
+
+==================================================
+CLUSTERING SUMMARY:
+Total files processed: 340
+Early: 151 files
+Late: 57 files
+Unrelated: 132 files
+
+Semantic Matching Statistics:
+Early category - Exact matches: 772, Semantic matches: 104
+Late category - Exact matches: 170, Semantic matches: 19
+
+Advanced Clustering Results:
+Cluster 0: 158 files
+Cluster 1: 130 files
+Cluster 2: 52 files
+==================================================
+Results saved to: /home/med_data/<user>/rule_based/clustered_output/clustering_results.json
