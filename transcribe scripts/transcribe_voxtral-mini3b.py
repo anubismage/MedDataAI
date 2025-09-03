@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Audio Transcription Script using Mistral Voxtral-Small-24B-2507
+Audio Transcription Script using Mistral Voxtral-Mini-3B-2507
 
 This script automatically transcribes all audio files in a specified input folder
-using the Mistral Voxtral-Small-24B-2507 model from Hugging Face.
+using the Mistral Voxtral-Mini-3B-2507 model from Hugging Face.
 
 Usage:
     python transcribe_voxtral-small24b.py --input_folder /path/to/audio/files --output_folder /path/to/output
@@ -47,7 +47,7 @@ logger = logging.getLogger(__name__)
 class VoxtralTranscriber:
     """Class to handle audio transcription using Voxtral-Small-24B-2507 model."""
     
-    def __init__(self, model_name: str = "mistralai/Voxtral-Small-24B-2507", force_cpu: bool = False, highpass_freq: Optional[float] = None):
+    def __init__(self, model_name: str = "mistralai/Voxtral-Mini-3B-2507", force_cpu: bool = False, highpass_freq: Optional[float] = None):
         """
         Initialize the transcriber with the specified model.
         
@@ -464,7 +464,7 @@ class VoxtralTranscriber:
             try:
                 # Generate output filename
                 audio_path = Path(audio_file)
-                model_name_short = "voxtral-small-24b"
+                model_name_short = "voxtral-mini-3b"
                 
                 # Include highpass info in filename if filter is applied
                 if self.highpass_freq is not None:
@@ -515,7 +515,7 @@ class VoxtralTranscriber:
 def main():
     """Main function to handle command-line arguments and run transcription."""
     parser = argparse.ArgumentParser(
-        description="Transcribe audio files using Mistral Voxtral-Small-24B-2507",
+        description="Transcribe audio files using Mistral Voxtral-Mini-3B-2507",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
