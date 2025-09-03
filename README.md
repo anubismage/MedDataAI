@@ -82,7 +82,7 @@ MedDataAI/
 - **`transcribe_phi4_manual.py`**: Manual Phi-4 multimodal implementation
 - **`transcribe_phi4_fixed.py`**: Fixed version of Phi-4 transcription
 - **`transcribe_phi4-multimodal-instruct.py`**: Phi-4 multimodal instruction-based
-- **`transcribe_voxtral-small24b.py`**: VoxTral model implementation
+- **`transcribe_voxtral-mini3b.py`**: VoxTral model implementation
 
 ### Features
 
